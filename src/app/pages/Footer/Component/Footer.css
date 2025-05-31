@@ -1,0 +1,95 @@
+.footer-btn .nav-link {
+    color: white;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-btn .nav-link:hover {
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    background-size: 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: rainbowText 5s linear infinite;
+  }
+  
+  @keyframes rainbowText {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+/* Mobile Devices */
+@media (max-width: 540px) {
+  .bn5 {
+    padding: 0.4em 1.2em;
+    font-size: 14px;
+  }
+
+  .form-title {
+    font-size: 18px;
+  }
+
+  .footer-btn .nav-link {
+    font-size: 14px;
+  }
+}
+
+/* Tablets (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .bn5 {
+    padding: 0.5em 1.5em;
+    font-size: 15px;
+  }
+
+  .form-title {
+    font-size: 20px;
+  }
+
+  .footer-btn .nav-link {
+    font-size: 15px;
+  }
+}
+
+/* 📱 Mobile screens */
+@media (max-width: 540px) {
+  .footer-btn .nav-link {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
+
+/* 📱 Tablets */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .footer-btn .nav-link {
+    font-size: 14px;
+  }
+
+  footer p {
+    font-size: 13px;
+  }
+}
