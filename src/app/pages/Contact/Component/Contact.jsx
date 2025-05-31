@@ -16,13 +16,13 @@ function Contact()
 
   const formSchema = Yup.object({
     name: Yup.string()
-      .required("Name is required")
-      .min(4, "Enter Minimum 4 Characters"),
+      .required("Please enter your name.")
+      .min(4, "Enter minimum 4 characters."),
     email: Yup.string()
     .email("Invalid email address")
-    .required("Email is required"),
+    .required("Please enter your email."),
     message: Yup.string()
-      .required("Message is required")
+      .required("Please enter your message.")
       .min(5, "Enter atleast 5 words"),
   });
 
@@ -91,7 +91,7 @@ function Contact()
         <br />
         <div className="row">
           <h6 className="text-center">ASK ME A QUESTION</h6>
-          <h1 className="text-center">Contact Me</h1>
+          <h1 className="text-center">Contact me</h1>
           <br />
           <div className="col-lg-1">
             <div className="mb-4 text-center">
@@ -206,7 +206,7 @@ function Contact()
                   name="name"
                   value={formik.values.name}
                   onChange={formik.handleChange}
-                  placeholder="Your Name"
+                  placeholder="Your name"
                 />
                 <span className="text-danger">{formik.errors.name}</span>
               </div>
@@ -217,7 +217,7 @@ function Contact()
                   name="email"
                   value={formik.values.email}
                   onChange={formik.handleChange}
-                  placeholder="Your Email"
+                  placeholder="Your email"
                 />
                 <span className="text-danger">{formik.errors.email}</span>
               </div>
@@ -228,7 +228,7 @@ function Contact()
                   name="message"
                   value={formik.values.message}
                   onChange={formik.handleChange}
-                  placeholder="Your Message"
+                  placeholder="Your message"
                 />
                 <span className="text-danger">{formik.errors.message}</span>
               </div>

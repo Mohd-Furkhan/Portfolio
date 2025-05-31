@@ -4,8 +4,8 @@ import { Typewriter } from "react-simple-typewriter";
 import About from "../../About/Component/About.jsx";
 import Projects from "../../Projects/Component/Projects.jsx";
 import Skills from "../../Skills/Component/Skills.jsx";
-import Contact from "../../Contact/Component/Contact.jsx";
 import Resume from "../../Resume/Component/Resume.jsx";
+import Contact from "../../Contact/Component/Contact.jsx";
 import "./Home.css";
 
 function Home() {
@@ -68,7 +68,7 @@ function Home() {
                       d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2M4 7h16M4 7v10a2 2 0 002 2h12a2 2 0 002-2V7M4 17h16"
                     />
                   </svg>
-                  &nbsp;Hire Me
+                  &nbsp;Hire me
                 </button>
               </Link>
               <a href="/assets/Mohammed Furkhan.pdf" target="_blank" download>
@@ -89,7 +89,7 @@ function Home() {
                       d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"
                     />
                   </svg>
-                  &nbsp;Download Resume
+                  &nbsp;Download resume
                 </button>
               </a>
             </div>
@@ -101,26 +101,27 @@ function Home() {
         <Projects />
         <Skills />
         <Resume />
-        <Contact />
       </div>
+      <Contact />
       <button
-  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-  className="rainbow-btn border-0 bg-transparent p-0"
-  style={{ position: "fixed", bottom: "1rem", right: "1rem", zIndex: 1000 }}
->
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="48"
-    height="48"
-    fill="currentColor"
-    className="bi bi-arrow-up-circle-fill rainbow-text"
-    viewBox="0 0 16 16"
-  >
-    <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
-  </svg>
-</button>
-
-
+        onClick={() => {
+          document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+          document.body.scrollTo({ top: 0, behavior: "smooth" });
+        }}
+        className="rainbow-btn border-0 bg-transparent p-0"
+        style={{ position: "fixed", bottom: "1rem", right: "1rem", zIndex: 1000 }}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="48"
+          height="48"
+          fill="currentColor"
+          className="bi bi-arrow-up-circle-fill rainbow-text"
+          viewBox="0 0 16 16"
+        >
+          <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+        </svg>
+      </button>
     </>
   );
 }
