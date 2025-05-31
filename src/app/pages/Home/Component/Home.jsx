@@ -46,9 +46,7 @@ function Home() {
               </span>
             </p>
             <p>
-              I enjoy turning ideas into clean, responsive, and high-performance
-              websites. Always excited to build smooth user experiences with
-              modern web technologies.
+              I enjoy creating websites that look good, run fast, and work well on both mobile and desktop. I use modern technologies to build simple and user-friendly experiences for users.
             </p>
             <div className="d-grid gap-2 d-md-flex justify-content-md-start">
               <Link to="/contact">

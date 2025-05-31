@@ -19,11 +19,11 @@ function Contact()
       .required("Please enter your name.")
       .min(4, "Enter minimum 4 characters."),
     email: Yup.string()
-    .email("Invalid email address")
+    .email("Invalid email address.")
     .required("Please enter your email."),
     message: Yup.string()
       .required("Please enter your message.")
-      .min(5, "Enter atleast 5 words"),
+      .min(5, "Enter atleast 5 words."),
   });
 
   const formik = useFormik({
@@ -85,7 +85,7 @@ function Contact()
   return (
     <>
       <div
-        className="container-fluid col-xxl-8 px-5 "
+        className="card container-fluid col-xxl-8 px-5 "
         style={{ backgroundColor: "#212528", color: "white" }}
       >
         <br />
